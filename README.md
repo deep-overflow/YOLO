@@ -1,2 +1,1 @@
-# YOLO
-Yonsei gOnna Lose fOrever
+# YOLO : Yonsei gOnna Lose fOrever
