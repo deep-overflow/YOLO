@@ -1,0 +1,5 @@
+- PyTorch
+  - Training Loop 안에서는 항상 파이썬 자체의 자료형(int, float...)이 아닌 torch.Tensor가 사용되어야 한다. 예를 들어, ```target_value = 0```와 같이 선언해주면 loss를 계산할 때 pytorch가 해당 value 때문에 오류를 일으킨다. 앞서 말한 코드는 ```target_value = torch.Tensor([0,])```와 같이 사용해야 pytorch가 잘 작동한다.
+  - ```a leaf Variable that requires grad is being used in an in-place operation.``` 에러
+    - ```loss = loss + something_else```와 같은 코드 때문에 생기는 에러이다. ```loss_ = loss + something_else```와 같이 in-place operation을 변경해주면 해결이 된다.
+  - ```RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation``` ![https://nieznanm.medium.com/runtimeerror-one-of-the-variables-needed-for-gradient-computation-has-been-modified-by-an-inplace-85d0d207623] 
