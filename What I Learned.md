@@ -4,3 +4,4 @@
     - ```loss = loss + something_else```와 같은 코드 때문에 생기는 에러이다. ```loss_ = loss + something_else```와 같이 in-place operation을 변경해주면 해결이 된다.
   - ```RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation``` ![https://nieznanm.medium.com/runtimeerror-one-of-the-variables-needed-for-gradient-computation-has-been-modified-by-an-inplace-85d0d207623] 
   - ```loss = torch.sum(torch.cat(loss_list))``` torch.cat을 써야 오류가 안난다
+  - opencv의 `im.read()`로 불러들인 이미지는 numpy array로 저장된다.

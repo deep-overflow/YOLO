@@ -1,2 +1,5 @@
 /loggerJK/VOCtrainval_06*
 /loggerJK/VOCdevkit/*
+/loggerJK/VOC*
+/loggerJK/VOCtest*
+/loggerJK/wandb
