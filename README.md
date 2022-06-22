@@ -1,4 +1,5 @@
 # YOLO : Yonsei🐯 gOnna Lose fOrever 
+- YOLO V1 모델을 스스로 구현한 결과물 레포지토리입니다.
 
 # 회의 진행 방법
 - 논문 요약 : velog, github
