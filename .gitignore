@@ -3,3 +3,5 @@
 /loggerJK/VOC*
 /loggerJK/VOCtest*
 /loggerJK/wandb
+*.bin
+.ipynb_checkpoints
