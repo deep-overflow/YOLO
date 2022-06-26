@@ -1,0 +1,9 @@
+
+
+Installed /opt/homebrew/Caskroom/miniforge/base/envs/pytorch-nightly/lib/python3.10/site-packages/torchvision-0.13.0a0+b969cca-py3.10-macosx-11.0-arm64.egg
+Processing dependencies for torchvision==0.13.0a0+b969cca
+Searching for torchvision==0.13.0a0+b969cca
+Reading https://pypi.org/simple/torchvision/
+/opt/homebrew/Caskroom/miniforge/base/envs/pytorch-nightly/lib/python3.10/site-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning:  is an invalid version and will not be supported in a future release
+  warnings.warn(
+No local packages or working download links found for torchvision==0.13.0a0+b969cca
