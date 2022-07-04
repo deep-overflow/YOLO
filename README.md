@@ -22,9 +22,3 @@
 - `learning_rate` : 1e-5 (fixed)
 - `epoch` : 70
   - 이 외의 기타 Training에 관련된 수학적 디테일들은 논문과 동일하거나, 최대한 유사하도록 구현했습니다.
-
-
-@misc{pascal-voc-2007,
-	author = "Everingham, M. and Van~Gool, L. and Williams, C. K. I. and Winn, J. and Zisserman, A.",
-	title = "The {PASCAL} {V}isual {O}bject {C}lasses {C}hallenge 2007 {(VOC2007)} {R}esults",
-	howpublished = "http://www.pascal-network.org/challenges/VOC/voc2007/workshop/index.html"}	

@@ -6,6 +6,6 @@
   - ```loss = torch.sum(torch.cat(loss_list))``` torch.cat을 써야 오류가 안난다
   - opencv의 `im.read()`로 불러들인 이미지는 numpy array로 저장된다.
   - Loss는 CPU에서 계산하는 것이 훨씬 이득이다. 특히 이렇게 for문으로 돌리는 경우라면!
-  - ` x = x + y` is not inplace. `x += y`is inplace.` PyTorch에서 inplace 연산은 되도록 피해야 한다.
+  - `x += y`is inplace. ` x = x + y` is not inplace. PyTorch에서 inplace 연산은 되도록 피해야 한다.
   - `torch.Tensor`는 기본적으로 immutable. 일반적인 경우, 텐서 간의 복사는 복사된 참조 변수의 수정이 기존 참조 변수의 값에 똑같은 영향을 미친다
     - [Tensor element를 mutable하게 복사하기](https://froggydisk.github.io/fourth-post/)
