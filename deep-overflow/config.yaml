@@ -1,0 +1,43 @@
+data:
+  # config about data
+  name: Pascal VOC Detection
+  resolution: 224
+
+model:
+  # config about model
+  name: YOLO
+  num_grid: 7
+  num_bounding_box: 2
+  num_class: 20
+  num_layer: 24
+  backbone: Swin
+
+# pretrain on ImageNet 1000-class competition dataset
+# use first 20 layers for pretrain
+
+training:
+  # config about training
+  total_epoch: 100
+  backbone_freeze_epoch: 10
+
+  batch_size: 64
+
+  lambda_coord: 5
+  lambda_noobj: .5
+
+  pretrained: False
+  pretrain_total_epoch: 100
+
+  learning_rate: 1e-3
+
+  optimizer: Adam
+  momentum: .9
+  decay: .0005
+  scheduler: None
+
+  checkpoint_epoch: 10
+  
+device: mps
+
+evaluation:
+  # config about evaluation
