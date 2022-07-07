@@ -5,3 +5,9 @@
 /loggerJK/wandb
 *.bin
 .ipynb_checkpoints
+**/__pycache__/*
+__pycache__
+VOCdevkit
+VOCtrainval_06*
+.DS_Store
+wandb

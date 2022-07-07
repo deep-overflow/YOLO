@@ -1,0 +1,29 @@
+MODEL:
+    S: 7
+    B: 2
+    C: 20
+    BATCH_SIZE: 4
+    EPOCH: 150
+    FINETUNE_EPOCH: 5
+    HEIGHT: 384
+    WIDTH: 384
+
+DATASET:
+    PATH: "../dataset"
+
+TRAINING:
+    LR: 1e-5
+    DEVICE: "cpu"
+    OPTIMIZER: "Adam"
+    SCHEDULER: None
+    SAVE_PATH: "./"
+
+LOSS:
+    LAMBDA_COORD: 5.
+    LAMBDA_NOOBJ: 0.5
+
+MISC:
+    SEED: 42
+
+WANDB:
+    USE: False
