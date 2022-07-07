@@ -11,12 +11,12 @@ input : (3, 448, 448) = (C, H, W)
 output : S * S * (B * 5 + C)
 """
 class Yolo(nn.Module):
-    def __init__(self, S, B, C):
+    def __init__(self, config):
         super().__init__()
         # 모델 상수
-        self.S = S
-        self.B = B
-        self.C = C
+        self.S = config.MODEL.S
+        self.B = config.MODEL.B
+        self.C = config.MODEL.C
         
         # backbone
         self.backbone = timm.create_model('swin_base_patch4_window12_384_in22k', pretrained=True)
@@ -44,3 +44,7 @@ class Yolo(nn.Module):
         out = torch.reshape(out, (-1, self.S, self.S, 5 * self.B + self.C))
 
         return out
+    
+def build_model(config):
+    model = Yolo(config)
+    return model
